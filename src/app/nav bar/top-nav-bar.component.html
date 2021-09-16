@@ -1,30 +1,56 @@
-<link href = "styles.css" />
+<header class ="top-header body-padding">
 <style>
+
   @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&display=swap');
 </style>
-<nav class = "navbar bg-dark">
+
+<nav class = "navbar">
 
 
 
 
-  <div class="logo container-fluid d-flex justify-content-between">
+  <div class="row logo container-fluid d-flex">
 
 
 
-    <form class=" search d-flex">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" height="">
+    <div class="col-4 d-flex justify-content-start">
+    <form class="search d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
     </form>
+    </div>
 
+    <div class="col-4 d-flex justify-content-center">
     <a href="https://eikenshop.com" title="EIKEN">
-      <img class="logo-eiken align-content-center" src="//cdn.shopify.com/s/files/1/0134/7738/0153/t/38/assets/LogoR_white1x.png?v=7181249867952342698" srcset="//cdn.shopify.com/s/files/1/0134/7738/0153/t/38/assets/LogoR_white1x.png?v=7181249867952342698 1x,
-    //cdn.shopify.com/s/files/1/0134/7738/0153/t/38/assets/LogoR_white@2x.png?v=3811031644126047369 2x" height="94" width="91" alt="EIKEN" >
+      <img class="logo-eiken " src="//cdn.shopify.com/s/files/1/0134/7738/0153/t/38/assets/LogoR_white1x.png?v=7181249867952342698" srcset="//cdn.shopify.com/s/files/1/0134/7738/0153/t/38/assets/LogoR_white1x.png?v=7181249867952342698 1x,
+    //cdn.shopify.com/s/files/1/0134/7738/0153/t/38/assets/LogoR_white@2x.png?v=3811031644126047369 2x" height="84" width="81" alt="EIKEN" >
     </a>
+    </div>
 
-    <a href="https://eikenshop.com/cart" title="EIKENcart" class="width" >
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="white" class="bi bi-cart" viewBox="0 0 -10 0">
+
+    <div class="shoppingcart justify-content-end col-4 d-flex justify-content-end dropdown-toggle rounded" data-hover="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <p class="cart-count rounded"><span class="total_count_ajax">0</span></p>
+    <a href="#" title="EIKENcart" class="width" >
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="black" class="bi bi-cart" viewBox="0 0 -10 0">
           <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
         </svg>
     </a>
+
+
+      <p>
+        <strong id="total_price_ajax">
+          <span class="total_price"><span class="">
+            <span class="money" doubly-currency-eur="0" doubly-currency-usd="0" doubly-currency="USD">$0.00
+            </span>
+          </span>
+          </span>
+        </strong>
+      </p>
+
+    </div>
+    <ul class = "cart-dropdown justify-content-end dropdown-menu" aria-labelledby="navbarDropdown" >
+      <li><a href="#" class="dropdown-item"> No products in cart. </a></li>
+    </ul>
   </div>
 
 
@@ -82,30 +108,21 @@
     <ul class = "dropdown-menu" aria-labelledby="navbarDropdown">
       <li><a href="#" class="dropdown-item"> Traveler's Notebook </a></li>
       <li><a href="#" class="dropdown-item"> Adventurers & Explorers </a></li>
+
     </ul>
   </li>
 
   </div>
+<div class="mid-text">
+  <h2 class="main-title-header"> READY TO BECOME A TRUE EXPLORER? </h2>
+  <h3 class="sec-title-header">Get a travel companion and embark on your next adventure!</h3>
+  <button class="home-slide-button rounded" onclick="window.location.href='https://eikenshop.com/collections/travel-backpack-rucksack-vintage-canvas-leather-eiken'">Discover our Products</button>
 
+</div>
 
 </nav>
+</header>
 
-
-<body>
-<div class = "home-header col-md-12 text-black nounderline">
-  <div class="row">
-    <div style="text-align: center;" class="home-page-title">
-      <h2 class="collection-home-title">
-        <a href="/collections/travel-backpack-rucksack-vintage-canvas-leather-eiken" class="home-page-link nounderline">
-          <span class="ovh2 text-black nounderline">
-            CANVAS BACKPACKS & RUCKSACKS
-          </span>
-        </a>
-      </h2>
-    </div>
-  </div>
-</div>
-</body>
 
 
 
