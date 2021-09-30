@@ -14,6 +14,9 @@ import {LeatherMessengerBagComponent} from "./body/leather-messenger-bag.compone
 import {CanvMessengerBagComponent} from "./body/canv-messenger-bag.component";
 import { AppRoutingModule } from './app-routing.module';
 import { RoutingLayoutComponent } from './routing-layout/routing-layout.component';
+import { SecondNavBarComponent } from './second-nav-bar/second-nav-bar.component';
+import { CarouselCardComponent } from './carousel-card/carousel-card.component';
+
 
 
 @NgModule({
@@ -29,7 +32,10 @@ import { RoutingLayoutComponent } from './routing-layout/routing-layout.componen
     LeatherBackpackComponent,
     CanvMessengerBagComponent,
     LeatherMessengerBagComponent,
-    RoutingLayoutComponent
+    RoutingLayoutComponent,
+    SecondNavBarComponent,
+    CarouselCardComponent,
+
 
   ],
   imports: [

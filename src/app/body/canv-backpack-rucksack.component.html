@@ -1,4 +1,49 @@
-<div class="">
-  <h2 class=  "canvBack">Canvas Backpacks & Rucksacks</h2>
-  <h5 class = "subCanvBack">Inspired by old retro designs and natural colors, our canvas <br> backpacks are sturdy, functional, and incredibly stylish. <br> Handmade with care in cotton canvas and full grain leather, it <br> will be your day-to-day best friend.</h5>
+<div class = "col-md-12 align-content-center body-padding">
+<div class=" row page1Background align-content-center text-white">
+  <h2 class=  "canvBack align-content-center">Canvas Backpacks & <br>Canvas Rucksacks</h2>
+  <h5 class = "subCanvBack align-content-center "><br>Inspired by old retro designs and natural colors, our canvas <br> backpacks are sturdy, functional, and incredibly stylish. <br> Handmade with care in cotton canvas and full grain leather, it <br>
+    will be your day-to-day best friend.</h5>
 </div>
+  <div class="product-filter clearfix">
+    <div class="toolbar-right">
+      <div class="list-options">
+        <div class="sort advanced-sortby"><select class="field orderby filters-toolbar__input--sort">
+          <option value="title-ascending" selected="selected">Sort by</option>
+          <option value="best-selling">Best Selling</option>
+          <option value="title-ascending">Name, A-Z</option>
+          <option value="title-descending">Name, Z-A</option>
+          <option value="price-ascending">Price, low to high</option>
+          <option value="price-descending">Price, high to low</option>
+          <option value="created-descending">Date, new to old</option>
+          <option value="created-ascending">Date, old to new</option>
+        </select>
+          <input class="collection-header__default-sort" type="hidden" value="manual">
+        </div>
+
+        <div class="limit">
+          <div class="select advanced-limit">
+            <select class="field orderby filters-toolbar__input--view">
+              <option value="8">8</option>
+              <option value="12">12</option>
+              <option value="24">24</option>
+              <option value="36">36</option>
+              <option value="48">48</option>
+            </select>
+            <input class="collection-header__default-view" type="hidden" value="36">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container-fluid ">
+  <div class="row row-cols-4 justify-content-center" >
+    <div *ngFor = "let backpackCard of backpackCards;">
+    <app-carousel-card cardImg = {{backpackCard.cardImg}} category={{backpackCard.category}} backpackName = {{backpackCard.backpackName}} currentPrice={{backpackCard.currentPrice}} previousPrice={{backpackCard.previousPrice}}> </app-carousel-card>
+    </div>
+
+
+</div>
+</div>
+</div>
+
