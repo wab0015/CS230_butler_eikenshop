@@ -16,6 +16,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { RoutingLayoutComponent } from './routing-layout/routing-layout.component';
 import { SecondNavBarComponent } from './second-nav-bar/second-nav-bar.component';
 import { CarouselCardComponent } from './carousel-card/carousel-card.component';
+import {HttpClientModule} from "@angular/common/http";
+import { UserInfoComponent } from './user-info/user-info.component';
 
 
 
@@ -35,12 +37,15 @@ import { CarouselCardComponent } from './carousel-card/carousel-card.component';
     RoutingLayoutComponent,
     SecondNavBarComponent,
     CarouselCardComponent,
+    UserInfoComponent,
+
 
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
