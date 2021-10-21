@@ -1,4 +1,4 @@
-export class carouselCardModel {
+export class pagecardModel {
   cardImg: string;
   category: string;
   backpackName: string;
