@@ -1,10 +1,12 @@
 import {HttpClient} from "@angular/common/http";
-import {Component} from "@angular/core";
+import {Component, Injectable} from "@angular/core";
 import {pagecardModel} from "./pagecard.model";
+
+@Injectable ({'providedIn':'root'})
 
 export class CardDataService {
   private baseUrl: string = "https://cs230-eikenshop-default-rtdb.firebaseio.com/";
-  private cardEndpoint: string = "cards.json";
+  private cardEndpoint1: string = "cards.json";
 
 
   constructor(private http: HttpClient) {
@@ -12,8 +14,8 @@ export class CardDataService {
   }
 
   getCardData() {
-    console.log('GETting: ' + this.baseUrl + this.cardEndpoint);
-    let cardData = this.http.get<pagecardModel[]>(this.baseUrl + this.cardEndpoint);
+    console.log('GETting: ' + this.baseUrl + this.cardEndpoint1);
+    let cardData = this.http.get<pagecardModel[]>(this.baseUrl + this.cardEndpoint1);
     return cardData;
   }
 }
