@@ -18,6 +18,8 @@ import { SecondNavBarComponent } from './second-nav-bar/second-nav-bar.component
 import { CarouselCardComponent } from './carousel-card/carousel-card.component';
 import {HttpClientModule} from "@angular/common/http";
 import { UserInfoComponent } from './user-info/user-info.component';
+import { EditCardData1Component } from './edit-card-data1/edit-card-data1.component';
+import {FormsModule} from "@angular/forms";
 
 
 
@@ -38,6 +40,7 @@ import { UserInfoComponent } from './user-info/user-info.component';
     SecondNavBarComponent,
     CarouselCardComponent,
     UserInfoComponent,
+    EditCardData1Component,
 
 
 
@@ -45,7 +48,8 @@ import { UserInfoComponent } from './user-info/user-info.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

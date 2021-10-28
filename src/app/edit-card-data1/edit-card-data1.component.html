@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <form #postForm="ngForm" (ngSubmit) = "onUpdateCardData1(postForm.value)">
+        <div class="input-group">
+          <span class="input-group-text bg-dark text-white"> Image </span>
+          <input type="text"  class="form-control" ngModel name="cardImg">
+        </div>
+        <div class="input-group">
+          <span class="input-group-text bg-dark text-white"> Category </span>
+          <input type="text"  class="form-control" ngModel name="category">
+        </div>
+        <div class="input-group">
+          <span class="input-group-text bg-dark text-white"> Name </span>
+          <input type="text"  class="form-control" ngModel name="backpackName">
+        </div>
+        <div class="input-group">
+          <span class="input-group-text bg-dark text-white"> Current Price </span>
+          <input type="text"  class="form-control" ngModel name="currentPrice">
+        </div>
+        <div class="input-group">
+          <span class="input-group-text bg-dark text-white"> Previous Price </span>
+          <input type="text"  class="form-control" ngModel name="previousPrice">
+        </div>
+
+        <button class="btn btn-dark " type="submit">
+          Add backpack
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
