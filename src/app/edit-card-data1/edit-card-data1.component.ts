@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {pagecardModel} from "../carousel-card/pagecard.model";
 import {CardData1service} from "../carousel-card/cardData1service";
+import {DatabaseService} from "../body/database.service";
 
 @Component({
   selector: 'app-edit-card-data1',
@@ -9,7 +10,8 @@ import {CardData1service} from "../carousel-card/cardData1service";
 })
 export class EditCardData1Component {
 
-  constructor(private infoService: CardData1service) {
+  constructor(private infoService: CardData1service, private dbService:DatabaseService) {
+    dbService.showData();
 
 
   }

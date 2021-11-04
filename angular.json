@@ -26,8 +26,6 @@
               "src/favicon.ico",
               "src/assets"
             ],
-
-
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
@@ -102,6 +100,16 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "CS230:build:production",
+            "firebaseProject": "cs230-eikenshop",
+            "firebaseHostingSite": "cs230-eikenshop"
           }
         }
       }

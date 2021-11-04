@@ -20,7 +20,10 @@ import {HttpClientModule} from "@angular/common/http";
 import { UserInfoComponent } from './user-info/user-info.component';
 import { EditCardData1Component } from './edit-card-data1/edit-card-data1.component';
 import {FormsModule} from "@angular/forms";
-
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import {AngularFireModule} from "@angular/fire/compat";
 
 
 @NgModule({
@@ -49,7 +52,10 @@ import {FormsModule} from "@angular/forms";
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase, 'cs230eikenshop-app'),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideDatabase(() => getDatabase())
   ],
   providers: [],
   bootstrap: [AppComponent]
