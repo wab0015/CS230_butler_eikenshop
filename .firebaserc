@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "cs230-eikenshop": {
+      "hosting": {
+        "CS230": [
+          "cs230-eikenshop"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cs230-eikenshop"
+  }
+}
