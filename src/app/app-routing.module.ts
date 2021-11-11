@@ -6,6 +6,7 @@ import {CanvMessengerBagComponent} from "./body/canv-messenger-bag.component";
 import {LeatherMessengerBagComponent} from "./body/leather-messenger-bag.component";
 import {LayoutComponent} from "./layout/layout.component";
 import {RoutingLayoutComponent} from "./routing-layout/routing-layout.component";
+import {AuthComponent} from "./auth/auth.component";
 
 const routes: Routes = [
 
@@ -15,7 +16,9 @@ const routes: Routes = [
   { path: 'leatherbackpackrucksack', component: LeatherBackpackComponent },
   { path: 'canvasmessengerbag', component: CanvMessengerBagComponent},
   { path: 'leathermessengerbag', component: LeatherMessengerBagComponent },
+  { path: 'auth', component: AuthComponent },
   { path: '' , redirectTo: '/home', pathMatch: 'full' }
+
 ];
 
 

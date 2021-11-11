@@ -24,6 +24,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import {AngularFireModule} from "@angular/fire/compat";
+import {AuthComponent} from "./auth/auth.component";
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import {AngularFireModule} from "@angular/fire/compat";
     CarouselCardComponent,
     UserInfoComponent,
     EditCardData1Component,
+    AuthComponent
 
 
 
